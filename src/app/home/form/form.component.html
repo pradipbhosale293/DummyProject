@@ -1,0 +1,57 @@
+<div class="button ">
+    <button class="btn btn-secondary mx-1" (click)="OpenSingInForm()">Login</button>
+    <button class="btn btn-secondary" (click)="OpenSingUpForm()">Sign Up</button>
+  </div>
+  
+  <form class="border p-3 mt-1 bg-secondary rounded" *ngIf="onClickOpen">
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label text-light">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label text-light">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3">
+      </div>
+    </div>
+    <div class="text-center text-dark">
+    <button type="submit" class="btn btn-light">Sign in</button>
+    </div>
+    <br>
+    <div class="text-end">
+        <strong >
+            <a class="text-light" href="#">Forgot Password?</a>
+        </strong>
+    </div>      
+  </form>
+  
+  <!-- Sing Up form  -->
+  <form class="border p-2 mt-1 bg-secondary rounded" *ngIf="OnclickOpenSingUp">
+    <div class="row mb-3">
+      <label for="fname" class="col-sm-2 col-form-label text-light"> Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="fname" class="col-sm-2 col-form-label text-light">Surname</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label text-light">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="text-center text-dark">
+    <button type="submit" class="btn btn-light">Sign Up</button>
+    </div>
+    <br>     
+  </form>
+  <div>
+    <p>Use of this service is subject to <span class="text-primary">Subscription Agreement</span> </p>
+  </div>
